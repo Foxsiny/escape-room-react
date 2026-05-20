@@ -6,3 +6,9 @@ export const AppRoute = {
   Login: '/login',
   MyQuests: '/my-quests',
 } as const;
+
+export enum QuestLevelLabel {
+  Easy = 'easy',
+  Medium = 'medium',
+  Hard = 'hard',
+}

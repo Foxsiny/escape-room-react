@@ -9,6 +9,7 @@ import {LoginPage} from '../../pages/login-page/login-page';
 import {MyQuestsPage} from '../../pages/my-quests-page/my-quests-page';
 import {NotFoundPage} from '../../pages/not-found-page/not-found-page';
 import {AppRoute} from '../../const';
+import { QUESTS_MOCKS } from '../../mocks/quests';
 
 export function App(): JSX.Element {
   return (
@@ -16,7 +17,7 @@ export function App(): JSX.Element {
       <Header />
 
       <Routes>
-        <Route path={AppRoute.Main} element={<MainPage />} />
+        <Route path={AppRoute.Main} element={<MainPage quests={QUESTS_MOCKS} />} />
         <Route path={AppRoute.Quest} element={<QuestPage />} />
         <Route path={AppRoute.Contacts} element={<ContactsPage />} />
         <Route path={AppRoute.Booking} element={<BookingPage />} />
